@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/css/pygments.min.css">
+  <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/css/font-awesome.min.css">
+  <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Insolit Atom">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+<meta name="author" content="Pierre-Amiel Giraud" />
+<meta name="description" content="Je me suis installé un serveur ownCloud, dont je suis assez content. Parmi les nombreuses fonctionnalités du logiciel, on trouve la gestion des carnets d’adresses grâce au protocole CardDav, qui permet la synchronisation des-dits carnets avec divers logiciels ou matériels (smartphones, tablettes, etc.). Seul problème, Thunderbird, mon client de ..." />
+<meta name="keywords" content="CardDav, Thunderbird, SOGO Connector">
+<meta property="og:site_name" content="Insolit"/>
+<meta property="og:title" content="Support de CardDav pour Thunderbird"/>
+<meta property="og:description" content="Je me suis installé un serveur ownCloud, dont je suis assez content. Parmi les nombreuses fonctionnalités du logiciel, on trouve la gestion des carnets d’adresses grâce au protocole CardDav, qui permet la synchronisation des-dits carnets avec divers logiciels ou matériels (smartphones, tablettes, etc.). Seul problème, Thunderbird, mon client de ..."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="http://localhost:8000/support-de-carddav-pour-thunderbird.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2012-03-19 08:00:00+01:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="http://localhost:8000/author/pierre-amiel-giraud.html">
+<meta property="article:section" content="Outils et astuces"/>
+<meta property="article:tag" content="CardDav"/>
+<meta property="article:tag" content="Thunderbird"/>
+<meta property="article:tag" content="SOGO Connector"/>
+<meta property="og:image" content="">  <title>Insolit &ndash; Support de CardDav pour Thunderbird</title>
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="http://localhost:8000">
+        <img src="http://localhost:8000/theme/img/profile.png" alt="Insolit" title="Insolit">
+      </a>
+      <h1><a href="http://localhost:8000">Insolit</a></h1>
+      <p>Informatique, logiciels libres et territoires</p>
+      <nav>
+        <ul class="list">
+          <li><a href="http://getpelican.com/" target="_blank">Pelican</a></li>
+          <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+          <li><a href="http://jinja.pocoo.org/" target="_blank">Jinja2</a></li>
+          <li><a href="#" target="_blank">You can modify those links in your config file</a></li>
+        </ul>
+      </nav>
+      <ul class="social">
+        <li><a class="sc-github" href="http://github.com/pagiraud" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-twitter" href="http://twitter.com/insolit_blog" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="sc-rss" href="/feeds/all.atom.xml" target="_blank"><i class="fa fa-rss"></i></a></li>
+      </ul>
+    </div>
+  </aside>
+  <main>
+    <nav>
+      <a href="http://localhost:8000">Home</a>
+      <a href="/categories.html">Catégories</a>
+      <a href="/archives.html">Archives</a>
+      <a href="/tags.html">Étiquettes</a>
+      <a href="http://localhost:8000/feeds/all.atom.xml">Atom</a>
+    </nav>
+
+<article>
+  <header>
+    <h1 id="support-de-carddav-pour-thunderbird">Support de CardDav pour Thunderbird</h1>
+    <p>Posted on lun. 19 mars 2012 in <a href="http://localhost:8000/category/outils-et-astuces.html">Outils et astuces</a></p>
+  </header>
+  <div>
+    <p>Je me suis installé un serveur <a href="http://www.owncloud.org" title="ownCloud">ownCloud</a>, dont je suis assez content. Parmi les nombreuses fonctionnalités du logiciel, on trouve la gestion des carnets d’adresses grâce au protocole CardDav, qui permet la synchronisation des-dits carnets avec divers logiciels ou matériels (<em>smartphones</em>, tablettes, etc.).</p>
+<p>Seul problème, Thunderbird, mon client de messagerie, ne supporte pas CardDav en natif. Néanmoins, une solution existe grâce à une extension (non répertoriée sur le site de Mozilla)&#8239;: <a href="http://www.sogo.nu/fr/downloads/frontends.html" title="SOGO Connectors">SOGO connector</a>.</p>
+<p>Elle fonctionne très bien, j’ai donc pu me débarrasser de la solution que j’utilisais avant (Zimbra Mail de Free couplé à Zindus) et continuer ainsi la reprise de contrôle de mes données personnelles.</p>
+<p>Une fois l’extension installée, ouvrez votre carnet d’adresses puis rendez-vous sur <strong>Fichier&#8239;&gt; Nouveau&#8239;&gt; Carnet d’adresses distant</strong>. Renseignez alors le nom du carnet à votre convenance puis l’URL.</p>
+<p>Toutefois, ça ne vaudra jamais une intégration pleine et entière à Thunderbird. Faites vous entendre sur <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=546932" title="Add support for online address books using the CardDav format.">Bugzilla</a>&#8239;!</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="http://localhost:8000/tag/carddav.html">CardDav</a>
+      <a href="http://localhost:8000/tag/thunderbird.html">Thunderbird</a>
+      <a href="http://localhost:8000/tag/sogo-connector.html">SOGO Connector</a>
+    </p>
+  </div>
+</article>
+
+    <footer>
+      <p>&copy; Pierre-Amiel Giraud </p>
+<p>Built using <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "name": "Support de CardDav pour Thunderbird",
+  "headline": "Support de CardDav pour Thunderbird",
+  "datePublished": "2012-03-19 08:00:00+01:00",
+  "dateModified": "",
+  "author": {
+    "@type": "Person",
+    "name": "Pierre-Amiel Giraud",
+    "url": "http://localhost:8000/author/pierre-amiel-giraud.html"
+  },
+  "image": "{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/profile.png",
+  "url": "http://localhost:8000/support-de-carddav-pour-thunderbird.html",
+  "description": "Je me suis installé un serveur ownCloud, dont je suis assez content. Parmi les nombreuses fonctionnalités du logiciel, on trouve la gestion des carnets d’adresses grâce au protocole CardDav, qui permet la synchronisation des-dits carnets avec divers logiciels ou matériels (smartphones, tablettes, etc.). Seul problème, Thunderbird, mon client de ..."
+}
+</script></body>
+</html>

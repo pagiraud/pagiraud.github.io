@@ -2,22 +2,33 @@
 <html lang="en">
 <head>
   <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="https://pagiraud.github.io/theme/css/style.min.css">
-  <link rel="stylesheet" type="text/css" href="https://pagiraud.github.io/theme/css/pygments.min.css">
-  <link rel="stylesheet" type="text/css" href="https://pagiraud.github.io/theme/css/font-awesome.min.css">
-  <link href="https://pagiraud.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Insolit Atom">
+
+    <link rel="stylesheet" type="text/css" href="https://pagiraud.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://pagiraud.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://pagiraud.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://pagiraud.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Insolit Atom">
+
+
 
   <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="" />
-  <meta name="author" content="Pierre-Amiel Giraud" />
-  <meta name="description" content="" />
+
+
+    <meta name="author" content="Pierre-Amiel Giraud" />
+    <meta name="description" content="" />
 <meta property="og:site_name" content="Insolit"/>
 <meta property="og:type" content="blog"/>
 <meta property="og:title" content="Insolit"/>
 <meta property="og:description" content=""/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="https://pagiraud.github.io"/>
+
   <title>Insolit</title>
 </head>
 <body>
@@ -27,8 +38,7 @@
         <img src="https://pagiraud.github.io/theme/img/profile.png" alt="Insolit" title="Insolit">
       </a>
       <h1><a href="https://pagiraud.github.io">Insolit</a></h1>
-      <p>Informatique, logiciels libres et territoires</p>
-      <nav>
+<p>Informatique, logiciels libres et territoires</p>      <nav>
         <ul class="list">
           <li><a href="http://getpelican.com/" target="_blank">Pelican</a></li>
           <li><a href="http://python.org/" target="_blank">Python.org</a></li>
@@ -61,10 +71,8 @@
       <a href="https://pagiraud.github.io/tag/isidore.html">ISIDORE</a>,      <a href="https://pagiraud.github.io/tag/opensearch.html">OpenSearch</a>,      <a href="https://pagiraud.github.io/tag/plugins.html">plugins</a>    </p>
   </header>
   <div>
-      <p>J’aime particulièrement les plugins OpenSearch, comme vous pouvez le voir dans <a href="https://pagiraud.github.io/rediger-un-plugin-de-recherche-integre-au-navigateur.html" title="Rédiger un plugin de recherche intégré au navigateur">ce billet</a> ou encore <a href="https://pagiraud.github.io/plugins-de-recherche-babord-et-babord.html" title="Plugins de recherche Babord et Babord+">celui-là</a>. Je trouve aussi les fonctionnalités de la plate-forme <a href="http://www.rechercheisidore.fr/" title="La plate-forme ISIDORE">Isidore</a> très intéressantes. La seule fonctionnalité qui me semble manquer est la possibilité de pouvoir ne renvoyer par défaut que les ressources accessibles physiquement. Pour mes propres besoins, j’avais rédigé un plugin ne renvoyant que les résultats référencés par REGARDS, le centre de recherche de mon laboratoire. Puis j’ai expliqué ma démarche dans <a href="https://pagiraud.github.io/rediger-un-plugin-de-recherche-integre-au-navigateur.html" title="Rédiger un plugin de recherche intégré au navigateur">un billet</a>.</p>
-<p>Plusieurs personnes m’ayant dit que le tutoriel était assez compliqué, et vu que le processus me semblait extrêmement simple à automatiser, j’ai créé une page sur laquelle se trouve une liste de plugins de recherche pour la plate-forme Isidore. Il y a un plugin par collection moissonnée, et la liste est automatiquement mise à jour chaque lundi.</p>
-<p>Il vous suffit de cliquer sur le bouton correspondant à la collection qui vous intéresse pour installer le plugin !</p>
-<p><a href="http://www.insolit.org/isidore/" title="Liste des plugins OpenSearch pour Isidore">La page se trouve ici.</a></p>
+      <p>J’aime particulièrement les plugins OpenSearch, comme vous pouvez le voir dans <a href="https://pagiraud.github.io/rediger-un-plugin-de-recherche-integre-au-navigateur.html" title="Rédiger un plugin de recherche intégré au navigateur">ce billet</a> ou encore <a href="https://pagiraud.github.io/plugins-de-recherche-babord-et-babord.html" title="Plugins de recherche Babord et Babord+">celui-là</a>. Je trouve aussi les fonctionnalités de la plate-forme <a href="http://www.rechercheisidore.fr/" title="La plate-forme ISIDORE">Isidore</a> très intéressantes. La seule fonctionnalité qui me semble manquer est la possibilité de pouvoir ne renvoyer par défaut que les ressources accessibles physiquement. Pour ...</p>
+      <a class="btn" href="https://pagiraud.github.io/plugins-recherche-isidore.html#plugins-recherche-isidore">Continue reading</a>
   </div>
   <hr />
 </article>
@@ -78,50 +86,8 @@
   </header>
   <div>
       <p>Voici un petit tutoriel qui m’a été demandé à la suite des <a href="http://mycroftproject.com/search-engines.html?name=regards" title="Plugins de recherche pour le centre REGARDS">plugins que j’ai rédigés</a>, et qui permettent de savoir quels sont les documents dont dispose le centre <a href="http://www.regards.cnrs.fr/" title="Le centre de documentations REGARDS">REGARDS</a>.</p>
-<p><strong>Objectif&#8239;:</strong> rédiger un plugin de recherche intégré au navigateur interrogeant la plate-forme <a href="http://www.rechercheisidore.fr/" title="La plate-forme ISIDORE">ISIDORE</a> et ne retournant que les résultats d’une collection ou organisation spécifique.</p>
-<p><strong>Exemple d’utilisation&#8239;:</strong> Votre centre de documentation est moissonné par ISIDORE et vous souhaitez ne plus avoir à maintenir votre moteur de recherche maison. Cependant, vos utilisateurs souhaitent savoir facilement à quels documents ils peuvent accéder physiquement.</p>
-<p><strong>Avantages&#8239;:</strong> Cette solution est très simple à mettre en œuvre. Elle ne requiert aucune modification sur le site de l’organisation ou de la collection visée (même si cela reste conseillé) ni aucune maintenance (sauf changement dans la structuration des requêtes de la plateforme ISIDORE).</p>
-<p><strong>Limites&#8239;:</strong> Seuls les résultats d’une collection sont retournés. Si l’objectif est de prioriser ceux d’une collection, faisant apparaître les autres documents à la suite, il faut réaliser une interface en utilisant l’API d’ISIDORE.</p>
-<p>Avant de rentrer dans le vif du sujet, je vous propose un petit topo sur l’ajout et la gestion de moteurs de recherche dans les navigateurs les plus courants. Ceux qui connaissent déjà le sujet peuvent sauter cette première partie sans problème.</p>
-<h1>Les plugins de recherche intégrés aux navigateurs</h1>
-<p><a href="http://fr.wikipedia.org/wiki/OpenSearch" title="Article Wikipédia sur OpenSearch">OpenSearch</a> est un ensemble cohérent de techniques permettant d’exécuter des recherches sur un site sans passer par une interface web. OpenSearch est supporté par les navigateurs suivants&#8239;:</p>
-<ul>
-<li>Mozilla Firefox 2 et versions ultérieures&#8239;;</li>
-<li>Windows Internet Explorer 7 et versions ultérieures&#8239;;</li>
-<li>Google Chrome / Google Chromium&#8239;;</li>
-<li>Apple Safari 5.1 et versions ultérieures, moyennant l’installation d’<a href="http://www.opensearchforsafari.com/" title="Extension OpenSearch pour Apple Safari">une extension</a>.</li>
-</ul>
-<p><img alt="Les moteurs de la barre de recherche de Firefox" src="https://pagiraud.github.io/images/firefox_opensearch.png" /></p>
-<p>Prenons le cas de Mozilla Firefox. OpenSearch y est exploité dans la <a href="https://support.mozilla.org/fr/kb/barre-recherche-choisir-facilement-moteur-favori#os=win7&amp;browser=fx19" title="Barre de recherche Mozilla Firefox">barre de recherche</a>. Cela permet justement de faire une recherche, par exemple dans un dictionnaire en ligne, sans avoir d’abord à aller sur leur site. Une bonne pratique est d’attribuer à chacun de vos moteurs un <a href="https://support.mozilla.org/fr/kb/barre-recherche-choisir-facilement-moteur-favori#w_mots-claes" title="Attribuer un mot clé à un moteur de recherche">mot clé</a>. Ainsi, vous pouvez passer d’un moteur à l’autre sans même toucher la souris.</p>
-<p>Par exemple, vous attribuez le mot clé <strong>d</strong> au moteur «&#8239;Portail lexical – CNRTL&#8239;» (le dictionnaire en ligne du CNRS). En tapant <strong>Ctrl + l</strong>, votre curseur se positionne dans la barre d’adresse. Tapez ensuite le mot clé de votre moteur (ici <strong>d</strong>) suivi d’un espace et de la recherche que vous souhaitez effectuer. C’est simple et très efficace.</p>
-<p>Les autres navigateurs proposent des fonctions plus ou mois similaires. À noter que seule une solution basée sur des raccourcis claviers est disponible dans Google Chrome, une seule barre servant à tout.</p>
-<p>Quel que soit votre navigateur, il y a deux façons d’ajouter un plugin de recherche. Le site officiel de Mozilla fournit <a href="https://support.mozilla.org/fr/kb/barre-recherche-choisir-facilement-moteur-favori#w_ajouter-des-moteurs-de-recherche" title="Ajouter des moteurs de recherche à Firefox">de très bonnes explications</a> sur la marche à suivre dans Firefox. D’autres instructions pour les autres navigateurs doivent aussi être facilement trouvables. Il existe une variante de la deuxième méthode, qui consiste à se rendre sur le site du <a href="http://mycroftproject.com/search-engines.html" title="Le site du projet MyCroft">projet Mycroft</a>, véritable annuaire de plugins de recherche compatibles avec OpenSearch.</p>
-<h1>Générer un plugin de recherche pour votre organisation à l’aide de Mycroft</h1>
-<p>La méthode que je décris ici concerne spécifiquement les collections d’ISIDORE, mais elle est très facilement adaptable pour tout site disposant d’un moteur de recherche.</p>
-<p><img alt="Récupérer l'identifiant numérique de la collection sur ISIDORE" src="https://pagiraud.github.io/images/identifiant_isidore.png" /></p>
-<p>1. En premier lieu, il vous faut récupérer l’identifiant numérique sous lequel votre institution ou collection est référencée sur le moteur de recherche ISIDORE. Rendez-vous sur <a href="http://www.rechercheisidore.fr/" title="La plate-forme ISIDORE">la plate-forme</a>, et dans la colonne de gauche cliquez sur «&#8239;Par collections et organisations&#8239;» puis sélectionnez la vôtre (ou celle qui vous intéresse…). Regardez la barre d’adresse de votre navigateur. L’identifiant est le numéro qui se trouve à la fin de l’URL, juste après <strong>source_taxo=</strong>. Notez-le.</p>
-<p>2. Rendez-vous sur la page du projet Mycroft permettant de <a href="http://mycroftproject.com/submitos.html" title="Proposer un plugin sur Mycroft">générer un plugin</a>. Remplissez les champs comme suit&#8239;:</p>
-<ol>
-<li><strong>Plugin name&#8239;:</strong> mettez quelque chose comme <strong><institution> (via ISIDORE)</strong>. Exemple&#8239;: REGARDS (via ISIDORE).</li>
-<li><strong>Plugin description&#8239;:</strong> Il faut quelque chose de court. Je n’ai jamais vu le texte entré ici apparaître quelque part, mais sait-on jamais…</li>
-<li><strong>Search URL&#8239;:</strong> C’est la partie la plus importante. Entrez <strong>http://www.rechercheisidore.fr/search?q={searchTerms}&amp;source_taxo=<identifiant_institution></strong> en remplaçant <identifiant_institution> par le numéro que vous avez récupéré à l’étape 1. La puce <strong>GET</strong> doit être cochée. Exemple&#8239;: http://www.rechercheisidore.fr/search?q={searchTerms}&amp;source_taxo=18144929</li>
-<li><strong>Input encoding</strong>&#8239;: Laissez tel quel, c’est-à-dire avec la valeur <strong>UTF-8</strong>.</li>
-<li><strong>Suggestions URL&#8239;:</strong> Entrez <strong>http://www.rechercheisidore.fr/suggest/?q={searchTerms}</strong> Les suggestions sont globales (elles ne concernent pas qu’une seule collection). Il ne sert donc à rien de rajouter l’identifiant.</li>
-<li><strong>Search form URL&#8239;:</strong> Entrez <strong>http://www.rechercheisidore.fr/search?source_taxo=<identifiant_institution></strong> Exemple&#8239;: http://www.rechercheisidore.fr/search?source_taxo=18144929</li>
-<li><strong>Reference&#8239;:</strong> Il faut trouver une suite alphanumérique qui décrive votre plugin et qui soit unique sur Mycroft. Je vous suggère quelque chose comme <strong>isidore-<institution></strong> Exemple&#8239;: isidore-regards</li>
-<li><strong>Select icon&#8239;:</strong> Il s’agit de l’icône qui illustrera votre plugin dans la barre de recherche. Soit vous désirez utiliser le favicon du site de votre institution, soit vous préférez opter pour celui d’ISIDORE. Dans ce cas, il vous suffit de cocher <strong>«&#8239;Copy existing plugin&#8239;»</strong> et d’entrer <strong>isidore-regards</strong> dans le champ de texte.</li>
-<li><strong>Plugin category&#8239;:</strong> Il n’y a rien de vraiment adéquat. Libraries ou Education &gt; Universities peuvent faire l’affaire selon les cas.</li>
-<li>Je ne vous aide pas pour le reste des champs. 😉</li>
-</ol>
-<p>Générez le plugin, testez-le (l’icône ne sera pas celle que vous avez choisie mais une tête de tyrannosaure rouge) et si tout fonctionne comme prévu proposez votre plugin (votre icône sera alors la bonne). Pour remplacer le plugin de test par le définitif, il faut supprimer manuellement le premier de votre liste de plugins de recherche. Si votre plugin n’apparaît pas lorsque vous le cherchez sur Mycroft,cliquez sur «&#8239;more…&#8239;» sous la ligne «&#8239;Site language&#8239;» et cochez la case «&#8239;Skip Cache&#8239;».</p>
-<h1>Intégrer ce plugin sur la page de votre institution (optionnel)</h1>
-<p>La méthode proposée ci-dessus possède deux inconvénients. D’abord, pour qu’un utilisateur puisse ajouter votre plugin, il faut déjà qu’il connaisse Mycroft. Ensuite, si Mycroft ferme, il deviendra indisponible pour de nouveaux utilisateurs.</p>
-<p>Les deux problèmes se résolvent simultanément. Pour ne plus dépendre de Mycroft, il faut héberger le plugin directement sur le serveur de votre institution (il faut donc posséder les droits nécessaires). Le plus simple est d’aller dans le <a href="http://www.commentcamarche.net/faq/14345-firefox-trouver-le-dossier-du-profil" title="Trouver le dossier de votre profil Firefox">dossier de votre profil Firefox</a>, puis dans le répertoire <strong>searchplugins</strong> pour y trouver le vôtre. Il vous suffit alors de l’uploader sur votre serveur.</p>
-<p>Pour que les visiteurs de votre site puisse installer le plugin que vous venez d’uploader, vous pouvez ajouter le texte suivant dans la section <strong>head</strong> d’une ou de plusieurs pages de votre site&#8239;:</p>
-<pre> <link rel="search" type="application/opensearchdescription+xml" title="<Plugin name>" href="<l'URL du fichier XML>" /></pre>
-
-<p>Remplacez <strong><Plugin name></strong> par la valeur que vous avez entrée plus haut comme Plugin name, et <strong><l’URL de votre fichier XML></strong> par l’adresse adéquate. Enregistrez, c’est terminé.</p>
-<p>J’espère que mes explications sont claires, et que vous n’avez pas rencontré de difficulté au cours des différentes étapes. Néanmoins, le cas échéant, n’hésitez pas à poser votre question en commentaire.</p>
+<p><strong>Objectif&#8239;:</strong> rédiger un plugin de recherche intégré au navigateur interrogeant la plate-forme <a href="http://www.rechercheisidore.fr/" title="La plate-forme ISIDORE">ISIDORE</a> et ne retournant que les ...</p>
+      <a class="btn" href="https://pagiraud.github.io/rediger-un-plugin-de-recherche-integre-au-navigateur.html#rediger-un-plugin-de-recherche-integre-au-navigateur">Continue reading</a>
   </div>
   <hr />
 </article>
@@ -134,20 +100,8 @@
       <a href="https://pagiraud.github.io/tag/libreoffice.html">LibreOffice</a>,      <a href="https://pagiraud.github.io/tag/zotero.html">Zotero</a>    </p>
   </header>
   <div>
-      <p>Vous connaissez sûrement déjà <a href="https://www.zotero.org/" title="Extension Zotero pour Firefox">Zotero</a>, une extension pour Firefox de gestion de bibliographie. L’outil existe d’ailleurs en version <em>standalone</em>, ce qui permet de le faire fonctionner aussi avec Safari ou Chrome/Chromium. C’est un logiciel très puissant, pour lequel il existe <a href="http://www.boiteaoutils.info/2012/06/introduction-zotero-30-nouveau-tutoriel.html" title="Tutoriel pour Zotero sur la boîte à outils des historiens">ça</a> et <a href="http://www.bib.umontreal.ca/lgb/Zotero/default.htm" title="Tutoriel pour Zotero sur le site de l'université de Montréal">là</a> de très bons tutoriels.</p>
-<p>Il existe également des <a href="https://www.zotero.org/support/word_processor_plugin_installation" title="Installing Word Processor Plugins for Zotero 3.0 for Firefox">extensions pour différents traitements de texte</a> connus, dont LibreOffice, OpenOffice et NeoOffice. Elles permettent d’appeler depuis le traitement de texte, via une interface très bien pensée, des références bibliographiques stockées dans Zotero. Et heureusement, car l’outil de gestion de bibliographie intégré à LibreOffice n’est pas des plus pratiques&#8239;!</p>
-<p>Cet article s’adresse plus particulièrement à ceux et celles qui ont déjà installé Zotero et l’extension pour LibreOffice. Normalement, ce que je décris devrait fonctionner aussi sous OpenOffice et NeoOffice <del>mais je n’ai pas vérifié</del>, ce qui a gentiment été vérifié par Anne Guégan.</p>
-<p>Par défaut, aucun raccourci clavier n’est attribué aux fonctionnalités de cette extension. Il faut donc utiliser la souris ou le <em>touchpad</em> pour demander l’insertion d’une référence ou de la bibliographie. En aficionado du tout clavier, j’ai donc cherché comment ajouter les raccourcis en question. Ce n’est pas difficile pour deux sous, mais pas intuitif non plus&#8239;!</p>
-<p>D’abord, sélectionnez le menu <strong>Outils &gt; Personnaliser…</strong> Ensuite, sélectionnez l’onglet <strong>Clavier</strong>.</p>
-<p><img alt="zotero libreoffice" src="https://pagiraud.github.io/images/zotero-libreoffice.png" title="Fenêtre de modification des raccourcis claviers de LibreOffice" /></p>
-<p>Une fenêtre semblable à celle de droite apparaît. C’est la fenêtre classique pour changer les raccourcis clavier de LibreOffice. Il ne reste alors plus que 4 étapes (mais il faut réitérer les trois dernières pour chaque raccourci)&#8239;:</p>
-<ol>
-<li>Dans le menu <strong>Catégorie</strong>, descendez l’ascenseur jusqu’en bas. Développez la liste <strong>Macros LibreOffice &gt; user &gt; Zotero</strong> et sélectionnez <strong>Zotero</strong>.</li>
-<li>Sélectionnez une <strong>Fonction</strong> pour laquelle vous souhaitez créer un raccourci. AMHA, les deux plus utiles sont ZoteroAddCitation et ZoteroEditCitation.</li>
-<li>Choisissez le <strong>Raccourci clavier</strong> que vous souhaitez affecter à cette fonction, en prenant garde de ne pas en prendre un déjà utilisé par une fonction intéressante. Je pense que pour les deux fonctions déjà évoquées CTRL+MAJ+C (pour Citation) et CTRL+MAJ+E (pour Édition) sont de bons choix.</li>
-<li>Validez votre choix en cliquant sur Modifier. Recommencez les étapes 2 à 4 pour chaque fonction pour laquelle vous souhaitez créer un raccourci.</li>
-</ol>
-<p>C’est bien pratique en mode plein écran&#8239;!</p>
+      <p>Vous connaissez sûrement déjà <a href="https://www.zotero.org/" title="Extension Zotero pour Firefox">Zotero</a>, une extension pour Firefox de gestion de bibliographie. L’outil existe d’ailleurs en version <em>standalone</em>, ce qui permet de le faire fonctionner aussi avec Safari ou Chrome/Chromium. C’est un logiciel très puissant, pour lequel il existe <a href="http://www.boiteaoutils.info/2012/06/introduction-zotero-30-nouveau-tutoriel.html" title="Tutoriel pour Zotero sur la boîte à outils des historiens">ça</a> et <a href="http://www.bib.umontreal.ca/lgb/Zotero/default.htm" title="Tutoriel pour Zotero sur le site de l'université de Montréal">là</a> de très bons ...</p>
+      <a class="btn" href="https://pagiraud.github.io/creer-des-raccourcis-claviers-pour-lextension-zotero-de-libreoffice.html#creer-des-raccourcis-claviers-pour-lextension-zotero-de-libreoffice">Continue reading</a>
   </div>
   <hr />
 </article>
@@ -160,109 +114,8 @@
       <a href="https://pagiraud.github.io/tag/developpement-web.html">Développement web</a>,      <a href="https://pagiraud.github.io/tag/css.html">CSS</a>,      <a href="https://pagiraud.github.io/tag/svg.html">SVG</a>,      <a href="https://pagiraud.github.io/tag/le-fond-et-la-forme.html">le fond et la forme</a>    </p>
   </header>
   <div>
-      <p>Il m’est arrivé à plusieurs reprises de vouloir mettre du texte en arrière-plan sur une page web. Certains disent que le mieux est de mettre son texte sur une <a href="https://fr.wikipedia.org/wiki/Image_matricielle" title="Image matricielle">image matricielle</a> (format PNG par exemple), et d’indiquer la fichier comme <code>background-image</code> dans le CSS. C’est une solution assez simple mais qui s’avère peu flexible (Et si je n’ai qu’un éditeur de texte sous la main? Et si je veux définir les mots dynamiquement, en PHP par exemple, sans passer par une bibliothèque du type <a href="http://www.imagemagick.org" title="ImageMagick">ImageMagick</a>&#8239;?).</p>
-<p>Il existe aussi une <a href="http://stackoverflow.com/questions/1191464/is-there-a-way-to-use-use-text-as-the-background-with-css" title="Du texte en arrière-plan grâce à un div lui-même placé à l'arrière-plan">bidouille assez connue</a> impliquant une balise <code>&lt;div&gt;</code> dans laquelle on inscrit le texte désiré avant de lui appliquer un <code>z-index</code> inférieur à celui courant. Elle a le mérite de répondre aux problèmes posées par l’utilisation d’une image matricielle, mais en pose d’autres. Il est gênant de se servir du HTML, censé traiter la structure du document, pour en assurer la présentation, en principe dévolue au CSS. Il se peut également que je n’ai pas accès au code HTML.</p>
-<p>Sachez qu’il existe une troisième solution, qui a le mérite de cumuler les avantages des deux précédentes, sans présenter aucun de leurs inconvénients&#8239;: utiliser la propriété <code>background</code> du CSS, mais pour y indiquer l’URL d’un fichier SVG, donc d’une <a href="https://fr.wikipedia.org/wiki/Image_vectorielle" title="Image vectorielle">image vectorielle</a>, dans lequel vous aurez au préalable écrit votre texte&#8239;!</p>
-<h1>Un exemple simple de code pour se faire une idée</h1>
-<h2>Les codes sources HTML, CSS et SVG</h2>
-<h3>Un code HTML tout ce qu’il y a de plus bête</h3>
-<div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;</span>
-<span class="cp">    &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;Content-type&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="p">/&gt;</span>
-    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Essai CSS<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;test.css&quot;</span> <span class="p">/&gt;</span>
-<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">body</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;corps&quot;</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ainsi va la vie<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</pre></div>
-
-
-<h3>Le CSS qui s’y rapporte</h3>
-<div class="highlight"><pre><span></span><span class="nt">div</span> <span class="p">{</span>
-<span class="nb">background</span><span class="o">:</span> <span class="sx">url(&#39;dessin-mini.svg&#39;)</span> <span class="nb">red</span><span class="p">;</span>
-<span class="nb">border</span><span class="o">:</span> <span class="m">1px</span> <span class="nb">black</span> <span class="nb">solid</span><span class="p">;</span>
-<span class="nb">text-align</span><span class="o">:</span> <span class="nb">center</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="nt">p</span> <span class="p">{</span>
-<span class="nb">margin</span><span class="o">:</span><span class="m">20px</span> <span class="nb">auto</span> <span class="m">20px</span> <span class="nb">auto</span><span class="p">;</span>
-<span class="nb">background</span><span class="o">:</span> <span class="nb">silver</span><span class="p">;</span>
-<span class="nb">padding</span><span class="o">:</span> <span class="m">30px</span><span class="p">;</span>
-<span class="nb">text-align</span><span class="o">:</span> <span class="nb">center</span><span class="p">;</span>
-<span class="nb">width</span><span class="o">:</span> <span class="m">50%</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
-
-
-<h3>Et enfin le SVG qui va bien</h3>
-<div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
-<span class="nt">&lt;svg</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="na">version=</span><span class="s">&quot;1.1&quot;</span> <span class="na">width=</span><span class="s">&quot;180&quot;</span> <span class="na">height=</span><span class="s">&quot;32&quot;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;text</span> <span class="na">y=</span><span class="s">&quot;15&quot;</span><span class="nt">&gt;</span>Attention Danger!<span class="nt">&lt;/text&gt;</span>
-<span class="nt">&lt;/svg&gt;</span>
-</pre></div>
-
-
-<p>On obtient donc un fichier très léger, de quelques centaines d’octets (ici 163), manipulable comme un vulgaire fichier texte&#8239;! Il faut simplement penser à adapter la valeur de <code>width</code> en fonction de son texte (faisable simplement en comptant les caractères si on utilise une police à chasse fixe — <code>font-family: monospace;</code>).</p>
-<h2>Le rendu de l’exemple&#8239;:</h2>
-<div style="background: url('/images/dessin-mini.svg') red; border: 1px black solid; text-align: center;">
-<p style="margin: 20px auto 20px auto; background: silver; padding: 30px; text-align: center; width: 50%;">Ainsi va la vie</p>
-</div>
-
-<p>Il est vrai que si le SVG n’est pas souvent évoqué comme possibilité pour les images d’arrière-plan (et encore moins pour les textes) c’est que tous les navigateurs ne sont pas <a href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics#Native_support" title="Support du SVG par les différents navigateurs">compatibles nativement</a>. Les choses vont quand même bien mieux que début 2011 (avant la sortie de Windows Internet Explorer 9, le premier navigateur de chez Microsoft à supporter le SVG).</p>
-<p>Notre texte d’arrière-plan est pour l’instant très simple, mais nous disposons de toute la puissance du SVG pour le personnaliser, l’intégrer à des dessins, etc.</p>
-<h1>Pour aller plus loin…</h1>
-<h2>Changer la police, la couleur ou la taille du texte</h2>
-<p>Le SVG minimal proposé plus haut ne contenait aucune information sur l’apparence à donner au texte. C’est donc celle par défaut qui est appliquée. Mais, si vous voulez le personnaliser, ce n’est pas plus compliqué que d’éditer du CSS&#8239;!</p>
-<div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
-<span class="nt">&lt;svg</span>
-    <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/2000/svg&quot;</span>
-    <span class="na">version=</span><span class="s">&quot;1.1&quot;</span> <span class="na">width=</span><span class="s">&quot;500&quot;</span> <span class="na">height=</span><span class="s">&quot;32&quot;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;text</span>
-        <span class="na">x=</span><span class="s">&quot;0&quot;</span>
-        <span class="na">y=</span><span class="s">&quot;31&quot;</span>
-        <span class="na">style=</span><span class="s">&quot;font-size:40px;</span>
-<span class="s">            font-style:normal;</span>
-<span class="s">            font-weight:normal;</span>
-<span class="s">            line-height:125%;</span>
-<span class="s">            letter-spacing:0px;</span>
-<span class="s">            word-spacing:0px;</span>
-<span class="s">            fill:#000000;</span>
-<span class="s">            fill-opacity:1;</span>
-<span class="s">            stroke:none;</span>
-<span class="s">            font-family:Sans&quot;</span><span class="nt">&gt;</span>
-    Mon petit texte à moi<span class="nt">&lt;/text&gt;</span>
-<span class="nt">&lt;/svg&gt;</span>
-</pre></div>
-
-
-<p>Vous pouvez ainsi modifier à votre guise bon nombre de propriétés de votre texte SVG très facilement.</p>
-<h2>Et pour la rotation&#8239;?</h2>
-<p>Il est courant de vouloir que le texte d’arrière-plan soit incliné de 30° ou 45°. Il existe deux méthodes pour obtenir ce résultat.</p>
-<h3>Indiquer la rotation dans le fichier SVG lui-même</h3>
-<p>C’est la solution qui paraît la plus évidente, mais nous allons voir que ce n’est pas le cas. Elle consiste à appliquer une transformation sur la balise <code>&lt;text&gt;</code>&#8239;: <code>transform = "rotate(-45 90 16)</code> où -45 correspond à l’inclinaison à donner au texte en degrés (le signe négatif indique qu’il faut tourner dans le sens inverse des aiguilles d’une montre, ce qui n’est <a href="https://fr.wikipedia.org/wiki/Sens_direct" title="Les sens de rotation">pas logique</a>, mais je ne fais pas les normes). Les deux nombres qui suivent indiquent les coordonnées du centre de rotation. Ici, je l’ai placé au milieu du SVG. Le code du fichier est donc le suivant&#8239;:</p>
-<div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
-<span class="nt">&lt;svg</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="na">version=</span><span class="s">&quot;1.1&quot;</span>  <span class="na">width=</span><span class="s">&quot;180&quot;</span> <span class="na">height=</span><span class="s">&quot;32&quot;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;text</span> <span class="na">y=</span><span class="s">&quot;15&quot;</span> <span class="na">transform =</span> <span class="s">&quot;rotate(-45 90 16)&quot;</span><span class="nt">&gt;</span>Attention Danger!<span class="nt">&lt;/text&gt;</span>
-<span class="nt">&lt;/svg&gt;</span>
-</pre></div>
-
-
-<p>Le problème essentiel de cette méthode, c’est qu’elle ne fait pas tourner l’image elle-même, seulement son texte. Il faut donc redimensionner l’image pour voir intégralement le texte, mais bien entendu cela modifie le centre de rotation que vous devriez choisir. Cela devient très vite un casse-tête. Donc, sauf si vous utilisez un logiciel de dessin vectoriel comme <a href="http://inkscape.org/" title="Inkscape, logiciel de dessin vectoriel">Inkscape</a>, je vous déconseille d’utiliser cette méthode.</p>
-<h3>Demander au CSS de faire pivoter l’arrière-plan</h3>
-<p>En réalité, la solution la plus simple est encore de passer par le CSS pour appliquer la rotation. Dès lors, il s’agit de faire tourner notre texte SVG comme on le ferait de n’importe quelle image d’arrière-plan. Là aussi, des limitations existent, mais elles sont bien moindres. Cela peut devenir un problème seulement si on souhaite mettre le texte en arrière-plan de <code>&lt;body&gt;</code>. Seulement, il s’agit là de tout un programme, et le plus simple est encore de vous renvoyer vers un tutoriel sur le sujet déjà bien rédigé, comme <a href="http://www.sitepoint.com/css3-transform-background-image/" title="How to Apply CSS3 Transformations to Background Images">celui-ci</a> (en anglais).</p>
-<h2>Des personnalisations très poussées</h2>
-<p>Vous avez toute la puissance du CSS désormais à disposition. Le plus simple pour avoir des fichiers assez légers et très personnalisés est de les réaliser sous Inkscape et de les enregistrer en SVG simple (ce qui n’est pas le format par défaut). Cela permet par exemple de positionner le texte sur des chemins, ou d’y appliquer des transformations complexes. Vous pouvez également essayer d’implémenter à la main quelques transformations grâce à <a href="http://www.w3schools.com/svg/svg_text.asp" title="Texte et SVG">quelques exemples</a> fournis par W3Schools.</p>
-<h1>Pour finir&#8239;: le W3C, McLuhan et Apollinaire</h1>
-<figure>
-<img src="/images/apollinaire_colombe.jpg" alt="Apollinaire&#8239;: La colombe poignardée et le jet d'eau" title = "Apollinaire&#8239;: La colombe poignardée et le jet d'eau"/>
-<figcaption>Apollinaire&#8239;: La colombe poignardée et le jet d’eau</figcaption>
-</figure>
-
-<p>Mettre du texte en arrière-plan grâce à un fichier SVG présente donc plusieurs avantages. Pourtant, si le W3C n’a jamais voulu permettre l’écriture dans le CSS (à l’exception notable des pseudo-éléments <code>:before</code> et <code>:after</code>), c’est que pour lui la séparation du fond et de la forme doit être la plus nette possible. Or cette séparation n’est qu’une fiction (qui suppose la séparabilité du message et de son support, voire l’absence d’influence du deuxième sur le premier) qui trouve avant tout sa justification dans la division des tâches au sein des entreprises de développement web. Elle est également un pré-supposé des vastes campagnes de numérisation, et se retrouve même dans les propos de philosophes tels Pierre Lévy lorsqu’il affirme que le virtuel est le réel en puissance (ce qui signifie pour lui que tout doit être et sera numérisé).</p>
-<p>Pourtant, il est impossible de séparer le message de sa présentation et de son support, les deux derniers contribuant tout autant à la construction du sens que la partie verbale du message (sans compter qu’il serait possible de renouveler cette dichotomie fond/forme pour le texte lui-même). Il y a bien sûr le célèbre aphorisme de McLuhan, «&#8239;<a href="https://en.wikipedia.org/wiki/The_medium_is_the_message" title="The medium is the message, de Marshall McLuhan">The medium is the message</a>&#8239;», mais il faut aussi évoquer l’œuvre de <a href="https://fr.wikipedia.org/wiki/Guillaume_Apollinaire" title="Guillaume Apollinaire">Guillaume Apollinaire</a>, dont le travail sur les calligrammes rend évident la participation de la présentation à la construction du sens. On retrouve des expérimentations de la même veine dans le <em>net art</em> et même dans l’<a href="https://fr.wikipedia.org/wiki/Ascii_art" title="L'ASCII Art, de l'Amiga aux smileys">ASCII art</a>&#8239;!</p>
+      <p>Il m’est arrivé à plusieurs reprises de vouloir mettre du texte en arrière-plan sur une page web. Certains disent que le mieux est de mettre son texte sur une <a href="https://fr.wikipedia.org/wiki/Image_matricielle" title="Image matricielle">image matricielle</a> (format PNG par exemple), et d’indiquer la fichier comme <code>background-image</code> dans le CSS. C’est une solution ...</p>
+      <a class="btn" href="https://pagiraud.github.io/mettre-du-texte-en-arriere-plan-avec-du-css-sans-toucher-au-html.html#mettre-du-texte-en-arriere-plan-avec-du-css-sans-toucher-au-html">Continue reading</a>
   </div>
   <hr />
 </article>
@@ -275,118 +128,8 @@
       <a href="https://pagiraud.github.io/tag/securite.html">Sécurité</a>,      <a href="https://pagiraud.github.io/tag/administration-de-serveur.html">Administration de serveur</a>,      <a href="https://pagiraud.github.io/tag/ssl.html">SSL</a>    </p>
   </header>
   <div>
-      <p>Il s’agit d’une opération somme toute assez triviale, mais les informations que l’on peut trouver ici ou là à ce sujet sont assez contradictoires voire erronées, y compris sur le propre site d’Apache. À partir d’éléments de réponse éparpillés sur le web, j’ai pu me débrouiller. Pour vous éviter d’avoir à faire plusieurs essais et à trier le bon grain de l’ivraie, j’ai décidé de rédiger ce tutoriel qui vous guidera pas à pas, depuis l’activation du SSL sous Apache jusqu’à la configuration des VirtualHosts.  </p>
-<h1>L’expression du besoin</h1>
-<p>Tout d’abord, il s’agit de savoir ce que l’on entend par plusieurs domaines sur une même adresse IP. Ici, il faut entendre domaine au sens de <a href="https://fr.wikipedia.org/wiki/Fully_qualified_domain_name" title="Fully Qualified Domain Name">FQDN</a> sans point final. Vous êtes concerné par exemple si vous souhaitez sécuriser deux sites avec deux noms de domaines différents hébergés sur la même machine, par exemple pour moi&#8239;:</p>
-<ul>
-<li>
-<p><code>www.insolit.org</code></p>
-</li>
-<li>
-<p><code>www.saintseiya.tv</code></p>
-</li>
-</ul>
-<p>Vous l’êtes également si vous souhaitez sécuriser plusieurs sous-domaines également hébergés sur la même machine, par exemple&#8239;:</p>
-<ul>
-<li>
-<p><code>www.saintseiya.tv</code></p>
-</li>
-<li>
-<p><code>forum.saintseiya.tv</code></p>
-</li>
-</ul>
-<p>Vous pourriez très bien vous contenter de sécuriser le sous-domaine www en rendant accessible le forum via www.saintseiya.tv/forum, mais la solution est moins esthétique. De plus, procéder par sous-domaine rajoute un soupçon de sécurité à votre site. Regardez par exemple vos logs Apache, vous comprendrez.</p>
-<h1>Vérification de l’installation</h1>
-<p>Pour réaliser les opérations qui suivent, votre installation doit supporter les <acronym title="Server Name Indication">SNI</acronym>. Autrement dit, vous devez disposer d’au moins la version 0.9.8 d’OpenSSL et 2.2.12 d’Apache. Comme ces deux versions datent respectivement de 2007 et 2009, cela ne devrait poser aucun problème sur des distributions récentes.</p>
-<p>En principe, tous les paquets nécessaires sont installés par défaut sur les principales distributions de serveurs GNU/Linux. Au pire, un petit coup d’apt-get, d’aptitude, de yum ou autre et le tour est joué. 😉</p>
-<h1>Obtenir les certificats&#8239;: le plat de résistance</h1>
-<p>Il y a bien sûr la méthode simple (auto-signature), qui permet en une commande d’obtenir un certificat. Si l’utilisation que vous faites de votre serveur est purement privée, vous pouvez vous en contenter&#8239;:</p>
-<div class="highlight"><pre><span></span>sudo make-ssl-cert /usr/share/ssl-cert/ssleay.cnf /etc/ssl/private/localhost.pem
-</pre></div>
-
-
-<p>Cependant, même dans le cas d’une utilisation privée, cela ne me semble pas optimal. L’appel à une autorité extérieure me paraît préférable (et en plus ça apprend les bonnes manières pour un usage public). Il existe plusieurs solutions gratuites de certification. Si vous avez un domaine chez <a href="http://www.gandi.net" title="Un registrar bien connu">Gandi</a>, vous avez droit à un certificat gratuit par exemple <del>(que j’ai gaspillé en faisant n’importe quoi)</del>. Il semblerait que <a href="http://startssl.com/" title="StartSSL, une solution gratuite de certification SSL">StartSSL</a> fournisse également ce genre de service.</p>
-<p>Pour ma part, j’ai opté pour <a href="http://www.cacert.org" title="CAcert">CAcert</a>, une autorité de certification gratuite et associative. Les certificats qu’elle fournit produisent une erreur de sécurité (au moins avec Firefox), il vous faudra donc confirmer une exception permanente. CACert est donc à éviter si vous souhaitez faire un usage public de votre site sécurisé, sauf si vous avez à faire à un public web savvy, tel <a href="https://linuxfr.org" title="Da Linux French Page">DLFP</a>.</p>
-<p>Bref, procédons.</p>
-<h2>Quelques préliminaires&#8239;: inscription et vérification du nom de domaine</h2>
-<p>Inscrivez-vous sur CAcert (il suffit de suivre les instructions), puis dans le menu de droite allez sur <strong>Domains &gt; Add</strong>. Entrez le nom de domaine que vous souhaitez sécuriser, sans le sous-domaine. Dans mon cas ce fut&#8239;:</p>
-<div class="highlight"><pre><span></span>insolit.org
-</pre></div>
-
-
-<p>Sur l’écran suivant, vous devez choisir une adresse email vers laquelle envoyer une vérification dans une liste restreinte avec des choix du type webmaster@mondomaine.tld . Si vous ne possédez aucune des adresses référencées, votre registrar vous fournit sûrement un service de redirection gratuit qu’il vous suffit d’activer. C’est le cas chez Gandi en tout cas. Suivez ensuite le reste des instructions.</p>
-<h2>Génération de la demande de signature de certificat sur votre serveur</h2>
-<p>Nous allons à présent générer une demande de signature de certificat, ou <acronym title="Certificate Signing Request">CSR</acronym>, grâce à OpenSSL.</p>
-<div class="highlight"><pre><span></span>openssl req -newkey rsa:2048 -subj /CN=*.domaine.tld -nodes -keyout domaine_cle_privee.pem -out domaine_csr.pem
-</pre></div>
-
-
-<p>Remplacez <em>.domaine.tld par votre domaine, par exemple </em>.insolit.org Vous pouvez choisir de préciser le sous-domaine (www par exemple), mais cela signifiera que vous devrez faire autant de certificats que de sous-domaines à sécuriser. Vous pouvez aussi modifier le nom des fichiers de sortie à votre convenance.</p>
-<p>Ouvrez votre CSR et copiez TOUT son contenu.</p>
-<h2>Installation du certificat généré par CAcert</h2>
-<p>Reconnectez-vous sur CAcert. Dans le panneau de droite, rendez-vous sur Server Certificates &gt; New. Collez l’intégralité de votre CSR dans la boîte de texte. Vérifiez bien que le contenu de la boîte commence par <code>-----BEGIN CERTIFICATE REQUEST-----</code> et se termine par <code>-----END CERTIFICATE REQUEST-----</code>. Cliquez sur Generate. Si vous avez bien suivi mes instructions, CAcert devrait vous retourner un «&#8239;joli&#8239;» certificat. Copiez-le et enregistrez-le sur votre serveur, sous le nom domaine_cert.pem par exemple.</p>
-<p>Il s’agit maintenant de déplacer les fichiers dans un répertoire approprié. Les commandes suivantes partent du principe que vous n’avez pas modifié les noms de fichiers proposés plus haut.</p>
-<div class="highlight"><pre><span></span>sudo mv domaine_cert.pem /etc/ssl/certs/ &amp;&amp; sudo mv domaine_cle_privee.pem /etc/ssl/priv/
-</pre></div>
-
-
-<p>Vous pouvez conserver votre CSR si ça vous amuse, mais il ne vous servira désormais plus à rien. Un petit coup de rm devrait lui régler son compte.</p>
-<h1>Configuration d’Apache</h1>
-<h2>Mise en place des hôtes virtuels basés sur des noms</h2>
-<p>Ils sont plus couramment appelés par leur nom anglais, name-based virtual hosts. On va commencer, si ce n’est déjà fait, par activer le module SSL d’Apache&#8239;:</p>
-<div class="highlight"><pre><span></span>sudo a2enmod ssl
-</pre></div>
-
-
-<p>Puis, ouvrez le fichier <em>/etc/apache2/ports.conf</em> et ajoutez la ligne</p>
-<div class="highlight"><pre><span></span>NameVirtualHost *:443
-</pre></div>
-
-
-<p>juste après celle quasi identique portant sur le port 80. Assurez-vous également que la directive <em>Listen 443</em> n’est pas commentée. vous devriez donc avoir, au minimum&#8239;:</p>
-<div class="highlight"><pre><span></span>NameVirtualHost *:80
-NameVirtualHost *:443
-
-Listen 80
-
-<span class="nt">&lt;IfModule</span> <span class="err">mod_ssl.c</span><span class="nt">&gt;</span>
-    Listen 443
-<span class="nt">&lt;/IfModule&gt;</span>
-</pre></div>
-
-
-<h2>Créer les fichiers de configuration des hôtes virtuels</h2>
-<p>Il s’agit simplement de copier un hôte virtuel fonctionnel en accès non sécurisé (de type http) et de le modifier en ajoutant les lignes spécifiques au SSL.</p>
-<p>On commence donc par copier le fichier de configuration&#8239;:</p>
-<div class="highlight"><pre><span></span>sudo cp /etc/apache2/sites-available/{domaine,domaine_ssl}
-</pre></div>
-
-
-<p>Ouvrez ensuite le fichier domaine_ssl. L’une des premières lignes devrait être <code>&lt;VirtualHost *:80&gt;</code>. Remplacez le 80 par 443. Rajoutez une ligne pour activer le SSL après la déclaration du ServerName&#8239;:</p>
-<div class="highlight"><pre><span></span>SSLEngine On
-</pre></div>
-
-
-<p>À la suite, indiquez la localisation de votre clé privée et de votre certificat&#8239;:</p>
-<div class="highlight"><pre><span></span>SSLCertificateFile /etc/ssl/certs/domaine_cert.pem
-SSLCertificateKeyFile /ssl/certs/priv/domaine_cle_privee.pem
-</pre></div>
-
-
-<p>Et c’est tout&#8239;! Recommencez cette dernière opération pour tous les sous-domaines nécessaires. Si vous possédez plusieurs noms de domaines sur la même machine, pensez bien à générer un certificat par domaine. On active l’hôte virtuel et on teste&#8239;:</p>
-<div class="highlight"><pre><span></span>sudo a2ensite domaine_ssl
-/etc/init.d/apache2 reload
-</pre></div>
-
-
-<h1>Conclusion et crédits</h1>
-<p>Normalement, tout devrait fonctionner. Si ce n’est pas le cas, pensez à consulter les logs d’Apache pour en savoir plus.</p>
-<p>J’ai réalisé ce tutoriel en en croisant 3 partiels / incomplets&#8239;:</p>
-<ol>
-<li><a href="http://doc.ubuntu-fr.org/tutoriel/securiser_apache2_avec_ssl" title="Sécuriser Apache2 avec SSL">Sécuriser Apache2 avec SSL</a>, du wiki Ubuntu-fr&#8239;;</li>
-<li><a href="http://wiki.cacert.org/SimpleApacheCert" title="Simple Apache Cert">Simple Apache Cert</a>, du wiki de CACert&#8239;;</li>
-<li><a href="http://www.codealpha.net/631/name-based-virtual-hosts-with-ssl-using-apache2-on-ubuntu-lucid/" title="Billet du blog code(alpha)">Name Based Virtual Hosts with SSL using Apache2 on Ubuntu Lucid</a>, sur le blog code(alpha).</li>
-</ol>
+      <p>Il s’agit d’une opération somme toute assez triviale, mais les informations que l’on peut trouver ici ou là à ce sujet sont assez contradictoires voire erronées, y compris sur le propre site d’Apache. À partir d’éléments de réponse éparpillés sur le web, j’ai pu ...</p>
+      <a class="btn" href="https://pagiraud.github.io/securiser-ssl-plusieurs-domaines-sur-une-meme-adresse-ip-avec-apache2.html#securiser-ssl-plusieurs-domaines-sur-une-meme-adresse-ip-avec-apache2">Continue reading</a>
   </div>
   <hr />
 </article>
@@ -401,24 +144,8 @@ SSLCertificateKeyFile /ssl/certs/priv/domaine_cle_privee.pem
   <div>
       <p>Avec beaucoup de retard, voici la présentation de la série Pioneer One que j’ai faite à l’arrache lors de la <a href="http://www.giroll.org/post/2012/06/07/Radio3-%3A-7-juin-2012" title="Radio Giroll 3">Radio Giroll n°3</a> du 7 juin 2012. Vous pouvez aussi écouter les autres émissions, toutes très intéressantes :</p>
 <ul>
-<li><a href="http://www.giroll.org/post/2012/06/07/Radio3-LibrePlan-une-application-pour-g%C3%A9rer-vos-projets-librement" title="LibrePlan">LibrePlan, une solution de gestion de projet libre</a>, par Thomas;</li>
-<li><a href="http://www.giroll.org/post/2012/06/07/L-impression-3D-et-les-droits-d-auteurs" title="L'impression 3D et les droits d'auteur">L’impression 3D et les droits d’auteur</a>;</li>
-<li><a href="http://www.giroll.org/post/2012/06/04/Radio3-Comment-choisir-sa-licence-libre-pour-sa-musique-auto-produite">Comment choisir sa licence libre pour sa musique auto-produite ?</a> par Yza.</li>
-</ul>
-<p>Le podcast de ma présentation :</p>
-<p><audio controls>
-  <source src="../audio/radio3_pioneerone.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio> </p>
-<p>Hormis <a href="http://www.sitasingstheblues.com/" title="Sita Sings The Blues">Sita Sings the Blues</a>, de <a href="http://blog.ninapaley.com/" title="Blog de Nina Paley">Nina Paley</a>, pouvez-vous citer une autre production audio-visuelle de fiction sous licence Creative Commons qui dure plus de cinq minutes? Maintenant, oui : <a href="http://www.pioneerone.tv/" title="Pioneer One">Pioneer One</a>.</p>
-<hr />
-<p>Pioneer One est une série de science-fiction diffusée exclusivement sur Internet. Vous pouvez la visionner en streaming sur <a href="http://www.vodo.net/" title="VODO">VODO</a> (le Jamendo des séries et films), ou bien la télécharger par Bittorrent. Elle compte aujourd’hui six épisodes, et chacun dure 35 à 40 minutes. L’audio est anglais uniquement, mais des <a href="http://www.addic7ed.com/overview/25990/Pioneer%20One" title="Sous-titres de Pioneer One">sous-titres</a> réalisés par les fans sont disponibles pour de nombreuses langues.</p>
-<iframe src="http://www.kickstarter.com/projects/pioneeronetv/pioneer-one-pilot-episode-for-dramatic-series/widget/video.html" frameborder="0" width="480" height="360"></iframe>
-
-<p>Elle est financée participativement (crowdfounded), en amont de la réalisation des épisodes, via <a href="http://www.kickstarter.com/projects/pioneeronetv/pioneer-one-pilot-episode-for-dramatic-series" title="Page Kickstarter de Pioneer One">KickStarter</a>. Le premier épisode a été tourné avec $6000, et à peine plus pour les 3 suivants. Cependant, au total, le projet a réussi à récolter plus de $100000 de dons!</p>
-<p>Avec de si petits moyens, les décors sont forcément minimalistes, et les plans sont très souvent fixes. Il y a beaucoup de dialogues, de nature très variée (en face à face, au téléphone, en visio-conférence, etc.). Inconditionnels de l’action et des effets spéciaux s’abstenir!</p>
-<p>Cela n’a pas empêché les réalisateurs de construire une ambiance angoissante et intrigante, autour de ce jeune homme maladif tombé des étoiles en combinaison de cosmonaute.</p>
-<p>Une série à découvrir.</p>
+<li><a href="http://www.giroll.org/post/2012/06/07/Radio3-LibrePlan-une-application-pour-g%C3%A9rer-vos-projets-librement" title="LibrePlan">LibrePlan, une solution de gestion de projet libre</a>, par Thomas ...</li></ul>
+      <a class="btn" href="https://pagiraud.github.io/pioneer-one-une-web-serie-libre-de-qualite.html#pioneer-one-une-web-serie-libre-de-qualite">Continue reading</a>
   </div>
   <hr />
 </article>
@@ -431,41 +158,8 @@ Your browser does not support the audio element.
       <a href="https://pagiraud.github.io/tag/twitter.html">Twitter</a>,      <a href="https://pagiraud.github.io/tag/archive.html">Archive</a>,      <a href="https://pagiraud.github.io/tag/plugin-wordpress.html">Plugin Wordpress</a>    </p>
   </header>
   <div>
-      <p>J’ai cherché longtemps un plugin WordPress capable de récupérer mes tweets et de les transformer en billets normaux. J’en ai enfin trouvé un qui me convient, même si, vous allez le voir, quelques problèmes demeurent. J’espère que ce billet permettra d’écourter la recherche des blogueurs intéressés par ce type de service.</p>
-<h1>Tout est une question de vocabulaire</h1>
-<p>J’ai cherché les expressions suivantes&#8239;:</p>
-<ul>
-<li>publish tweets as posts</li>
-<li>tweets as wordpress posts</li>
-<li>tweets to posts wordpress plugin</li>
-</ul>
-<p>Sans aucun résultat… Je les reproduis ici pour qu’en les cherchant on puisse justement tomber au moins sur cette page. Puis j’ai compris qu’il fallait plutôt chercher&#8239;:</p>
-<ul>
-<li>import tweets to wordpress</li>
-<li>archive tweets into wordpress</li>
-<li>wordpress twitter archiver</li>
-</ul>
-<p>Ou d’autres choses du même acabit.</p>
-<h1>Ozh’ Tweet Archiver, une solution sous-optimale</h1>
-<p>Quant à moi, j’ai finalement opté pour <a href="http://wordpress.org/extend/plugins/ozh-tweet-archiver/" title="Plugin pour archiver ses tweets dans WordPress">Ozh’ Tweet Archiver</a>. Il accomplit sa mission (presque) à la perfection. J’ai en effet repéré deux limitations, dont je suis parvenu à contourner la première.</p>
-<h2>The medium is the message</h2>
-<p>Les tweets utilisent forcément le <a href="http://codex.wordpress.org/Post_Formats" title="Mise au point sur les formats de posts">format de billet</a> ‘standard’ (‘Par défaut’ en français, à différencier du format que vous avez configuré pour être celui… par défaut). Même en demandant à ce que ‘aside’ (‘En passant’) soit le format par défaut, les tweets utilisent tout de même ‘standard’. Cela est probablement dû au fait que le plugin ait été mis à jour pour la dernière fois avant que les formats de billets fassent leur apparition dans WordPress.</p>
-<p>Quoi qu’il en soit, la mise en page qui en résulte est loin d’être optimale&#8239;: le titre du billet-tweet (qui est le même que son contenu) prend une place démesurée (c’est fou ce que 140 caractères peuvent être longs&#8239;!). Pour résoudre le problème, il convient d’ajouter deux lignes au fichier <code>inc/import.php</code>&#8239;:</p>
-<div class="highlight"><pre><span></span><span class="p">$</span><span class="nv">postformat</span><span class="x"> = &#39;aside&#39;;</span>
-<span class="x">set_post_format( </span><span class="p">$</span><span class="nv">post_id</span><span class="x"> , </span><span class="p">$</span><span class="nv">postformat</span><span class="x">);</span>
-</pre></div>
-
-
-<p>Il faut placer ces lignes après&#8239;:</p>
-<div class="highlight"><pre><span></span><span class="p">$</span><span class="nv">post_id</span><span class="x"> = wp_insert_post( </span><span class="p">$</span><span class="nv">post</span><span class="x"> );</span>
-</pre></div>
-
-
-<h2>Couper des billets à la hash</h2>
-<p>Le deuxième problème est plus ardu (je n’ai pas encore réussi à le résoudre). Si vous choisissez de transformer les hashtags en mots-clés, que ce soit pour rediriger vers une recherche Twitter ou une recherche interne à votre blog, alors Ozh’ Tweet Archiver transformera tous les dièses de votre site en mots-clefs (remarquez que j’évite soigneusement ce caractère ici). Peu importe? Cela rend inutilisable, entre autres, la fonctionnalité «&#8239;More&#8239;».</p>
-<p>Je me pencherai sur la question quand j’aurai davantage de temps.</p>
-<h1>Ozhez&#8239;!</h1>
-<p>Il y a peut-être d’autres solutions, plus complètes, mieux finies, mais je ne les ai pas trouvées. Il y a bien <a href="http://wordpress.org/extend/plugins/tweet-blender/" title="Tweet Blender">Tweet Blender</a> qui offre (entre autres) une solution d’archivage, mais le moyen est disproportionné au regard de mes besoins. Si vous trouvez mieux que Ozh’ Tweet Archiver, faites-moi signe&#8239;! En attendant, je m’en contenterai et essaierai de la bidouiller.</p>
+      <p>J’ai cherché longtemps un plugin WordPress capable de récupérer mes tweets et de les transformer en billets normaux. J’en ai enfin trouvé un qui me convient, même si, vous allez le voir, quelques problèmes demeurent. J’espère que ce billet permettra d’écourter la recherche des blogueurs intéressés ...</p>
+      <a class="btn" href="https://pagiraud.github.io/publier-ses-tweets-en-tant-que-billets.html#publier-ses-tweets-en-tant-que-billets">Continue reading</a>
   </div>
   <hr />
 </article>
@@ -480,26 +174,8 @@ Your browser does not support the audio element.
   <div>
       <p>Il y a 15 jours, le 3 mai 2012, a eu lieu la deuxième édition de <a href="http://www.giroll.org/post/2012/04/28/Radio2-jeudi-3-mai-2012" title="Radio Giroll #2">Radio Giroll</a>. Comme la fois précédente, l’émission a été diffusée sur <a href="http://www.oxyradio.net/" title="OxyRadio, respire et écoute">Oxyradio</a>, et reste disponible en podcast. Cette fois-ci, le menu concocté par <del>l’association</del> le collectif se composait de :</p>
 <ul>
-<li><a href="http://www.giroll.org/post/2012/03/01/L-accord-SACEM-Cr%C3%A9ative-Commons-%3A-une-mauvaise-nouvelle-pour-la-musique-libre." title="L'accord SACEM / Creative Commons par Yza">L’analyse de l’accord entre la SACEM et Creative Commons</a> par Yza, qui prend le contre-pied des opinions habituelles, puisqu’elle nous explique qu’il s’agit d’une mauvais nouvelle pour la musique libre.</li>
-<li>Un point sur <a href="http://www.giroll.org/post/2012/04/27/Radio2-ACTA%2C-O%C3%B9-en-est-on-%21" title="Un point sur l'ACTA">l’évolution institutionnelle de l’ACTA</a> par Yishan, avec un tour d’horizon du point de vue des différents partis et des lois américaines telles SOPA, PIPA et CISPA. Excellent, on peut seulement regretter l’absence du <a href="https://fr.wikipedia.org/wiki/Trans-Pacific_Strategic_Economic_Partnership" title="Trans-Pacific Economic Partnership">TPP</a> dans l’analyse.</li>
-<li>Une <a href="http://www.giroll.org/post/2012/04/27/Radio2-%3A-HP-WebOS-syst%C3%A8me-libre-mobile-en-devenir" title="WebOS, système libre mobile en devenir">présentation de WebOS</a>, le système d’exploitation historique de HP, et auparavant de Palm. Il est devenu <em>open source</em> l’année dernière.</li>
-<li>Quelques exemples de <a href="http://www.giroll.org/post/2012/05/01/Radio2-La-strat%C3%A9gie-globale-de-Microsoft-face-aux-logiciels-libres" title="Microsoft, quelle stratégie envers le Libre?">recherches sur les logiciels libres financées par Microsoft</a>, par moi-même.</li>
-</ul>
-<p>Comme la dernière fois, les quatre émissions sont très intéressantes, et je vous encourage à toutes les écouter !</p>
-<p><audio controls>
-  <source src="../audio/radio2_microsoft_libre-ep2.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio> </p>
-<p>Copie de l’article publié sur <a href="http://www.giroll.org" title="Giroll">le site de Giroll</a> :</p>
-<p>Le ton du discours de Microsoft sur les logiciels libres a bien changé. Si en 2001 Steve Ballmer, actuel CEO (PDG) de Microsoft, a affirmé que Linux était un cancer, en 2007 il a annoncé qu’il aimerait que toute innovation dans l’open source ait lieu sous Windows. Beaucoup y voient un réel infléchissement dans la position du géant de l’informatique sur le sujet. Pourtant, les deux positions ne sont pas contradictoires.</p>
-<hr />
-<p>Le géant mondial de l’informatique a une stratégie globale, cohérente, coordonnée pour atteindre son objectif : maintenir sa situation monopolistique dans un marché en mutation perpétuelle.</p>
-<p>Plutôt que de brosser à grands traits un portait abstrait de cette stratégie, nous allons développer dans plusieurs épisodes des actions concrètes de Microsoft, leurs impacts sur le monde du Libre, et leur place dans la stratégie globale de la firme.</p>
-<h1>Épisode 2 : Microsoft et le monde de la recherche</h1>
-<p>En 2010, un ouvrage important sur l’économie du logiciel libre a été publié : <em><a href="http://www.amazon.fr/The-Comingled-Code-Economic-Development/dp/0262014637/" title="The Comingled Code">The Comingled Code</a></em> — ce que l’on peut traduire par <em>Le Code mélangé</em>. Ses auteurs (Josh Lerner et Mark Schankerman) sont des scientifiques américains reconnus, qui travaillent sur les logiciels libres au moins depuis les années 2000. Pourtant, certains de leurs résultats sont très surprenants. Ainsi, selon eux, <q>« <em>policies that would extend the use of open source software will […] decrease social welfare</em> »</q> (p.170). (Les politiques visant à intensifier l’utilisation de logiciels libres […] diminuent le bien-être social). Or, les études qui ont conduit à la rédaction du livre ont été financées par Microsoft — ce qui est clairement indiqué en préface (pp x-xi).</p>
-<p><img alt="The Comingled Code" src="https://pagiraud.github.io/images/comingled_code_cover.jpg" title="The Comingled Code" />]</p>
-<p>Microsoft finance donc des recherches en économie sur les logiciels libres. Ces deux chercheurs américains ne sont pas des cas isolés. Par exemple, ils travaillent souvent en tandem avec deux français de la Toulouse School of Economics (TSE), Jean Tirole et Jacques Crémer. La TSE a été <a href="http://www.mediapart.fr/journal/economie/070312/lopa-de-la-finance-sur-la-recherche-economique" title="Laurent Mauduit épingle la TSE dans un ouvrage">épinglée il y a peu par Laurent Mauduit</a> à cause de ses importants subsides issus du monde de la finance. Jean Tirole y est même comparé à un virus.</p>
-<p>Y a-t-il d’autres chercheurs financés par Microsoft? Quelle est la place de ses financements dans la stratégie globale de Microsoft envers le Libre ?</p>
+<li><a href="http://www.giroll.org/post/2012/03/01/L-accord-SACEM-Cr%C3%A9ative-Commons-%3A-une-mauvaise-nouvelle-pour-la-musique-libre." title="L'accord SACEM / Creative Commons par Yza">L’analyse de ...</a></li></ul>
+      <a class="btn" href="https://pagiraud.github.io/microsoft-recherche-logiciels-libres.html#microsoft-recherche-logiciels-libres">Continue reading</a>
   </div>
   <hr />
 </article>
@@ -512,31 +188,8 @@ Your browser does not support the audio element.
       <a href="https://pagiraud.github.io/tag/pdf.html">PDF</a>,      <a href="https://pagiraud.github.io/tag/command-line-interface-cli.html">Command Line Interface (CLI)</a>,      <a href="https://pagiraud.github.io/tag/recherche-de-fichier.html">Recherche de fichier</a>    </p>
   </header>
   <div>
-      <p>Vous avez une floppée de PDF, peut-être des centaines, et vous cherchez à savoir quels sont ceux qui utilisent un mot ou une expression donnée. Ou bien, vous essayez de retrouver une citation bien précise —&#8239;qui se trouve dans l’un de ces documents&#8239;— mais vous ne savez pas ou chercher. Comment résoudre ce problème sous GNU/Linux&#8239;?</p>
-<h1>Quelques solutions insatisfaisantes à mon avis…</h1>
-<p>… mais qui vous combleront peut-être.</p>
-<p>Il existe des outils très généralistes, qui permettent de chercher un mot ou une expression dans de multiples formats de documents, comme <a href="https://en.wikipedia.org/wiki/Beagle_%28software%29" title="Beagle">Beagle</a>, <a href="http://www.lesbonscomptes.com/recoll/" title="Recoll est un outil personnel de recherche textuelle pour Unix et Linux">Recoll</a>, ou tous les logiciels basés sur <del>Zeitgeist</del> <a href="https://live.gnome.org/action/show/GnomeActivityJournal" title="Gnome Activity Journal">Gnome Activity Journal</a>. Le problème est qu’ils se fondent sur un système d’indexation beaucoup plus profond que celui du célèbre <a href="https://fr.wikipedia.org/wiki/Locate">locate</a>, et sont même accusés par certains d’être de véritables Big Brothers.</p>
-<p>À l’opposé, il est possible de s’en tirer en combinant deux bonnes vieilles commandes. Pendant assez longtemps j’ai utilisé&#8239;:</p>
-<div class="highlight"><pre><span></span>less *.pdf | grep mot_cherché
-</pre></div>
-
-
-<p>Cette solution est cependant très loin d’être optimale. Le temps d’exécution est plutôt long, la lisibilité de la sortie est mauvaise.</p>
-<p>On peut aussi utiliser les outils intégrés à Adobe Reader 9. Non seulement le logiciel n’est pas libre, mais en plus il n’est pas possible de sauvegarder le résultat de la recherche ou d’utiliser des expressions rationnelles.</p>
-<h1>pdfgrep, le meilleur compromis entre légèreté, non-intrusion et possibilités</h1>
-<p><a href="http://pdfgrep.sourceforge.net/" title="pdfgrep">pdfgrep</a> est pour moi la meilleure façon de réaliser des recherches, y compris complexes (c’est-à-dire à l’aide d’expressions rationnelles) dans de nombreux fichiers PDF sous GNU/Linux. La sortie précise de quel fichier le résultat est issu, et surligne l’expression recherchée. Que demander de plus&#8239;? Ah oui, comme le résultat est affiché sur la sortie standard (stdout), il est très facile d’enregistrer le résultat dans un fichier.</p>
-<p>L’usage de base est très simple :</p>
-<div class="highlight"><pre><span></span>pdfgrep [option] pattern file
-</pre></div>
-
-
-<p>Par exemple :</p>
-<div class="highlight"><pre><span></span>pdfgrep -n hacker Coleman*
-</pre></div>
-
-
-<p>L’option <code>-n</code> permet d’afficher le numéro de la page où se trouve la ligne renvoyée. Ici, pdfgrep renverra toutes les lignes où apparaît la chaîne « hacker » dans tous les fichiers du dossier courant dont le nom commence par «&#8239;Coleman&#8239;».</p>
-<p>pdfgrep est dans les dépôts par défaut de toutes les bonnes distributions.</p>
+      <p>Vous avez une floppée de PDF, peut-être des centaines, et vous cherchez à savoir quels sont ceux qui utilisent un mot ou une expression donnée. Ou bien, vous essayez de retrouver une citation bien précise —&#8239;qui se trouve dans l’un de ces documents&#8239;— mais vous ne savez pas ou ...</p>
+      <a class="btn" href="https://pagiraud.github.io/chercher-dans-des-pdf-multiples-sous-gnulinux.html#chercher-dans-des-pdf-multiples-sous-gnulinux">Continue reading</a>
   </div>
   <hr />
 </article>
@@ -549,32 +202,8 @@ Your browser does not support the audio element.
       <a href="https://pagiraud.github.io/tag/microsoft.html">Microsoft</a>,      <a href="https://pagiraud.github.io/tag/open-world-forum.html">open world forum</a>,      <a href="https://pagiraud.github.io/tag/owf.html">owf</a>,      <a href="https://pagiraud.github.io/tag/radio-giroll.html">radio giroll</a>    </p>
   </header>
   <div>
-      <p>Jeudi dernier (5 avril 2012), c’était la première <a href="http://www.giroll.org/post/2012/03/30/Radio1-jeudi-5-avril" title="Première Radio Giroll">Radio Giroll</a> diffusée sur <a href="http://www.oxyradio.net/" title="Oxyradio - Webradio libre - Respire et Écoute">Oxyradio</a>. Enfin première, pas vraiment : cela fait bien longtemps que le collectif diffuse des émissions de radio sur Oxy à l’occasion de ses <del>légendaires</del> sympathiques <em>install-parties</em>. C’est à l’occasion de celle de décembre (Oneiric Party) que <a href="https://pagiraud.github.io/interview-de-jean-christophe-elineau-a-loneiric-party.html" title="Interview de Jean-Christophe Élineau à l’Oneiric Party">j’ai interviewé</a> Jean-Christophe Élineau d’<a href="http://www.pole-aquinetic.fr/" title="Aquinetic">Aquinetic</a>.</p>
-<p>Au programme&nbsp;:</p>
-<ul>
-<li>Un <a href="http://www.giroll.org/post/2012/04/05/Radio1-Retour-sur-le-Barcamp2" title="Réactions au 2e BarCamp Bordelais">retour sur le BarCamp</a> bordelais des 31 mars et 1er avril 2012 par Thomas&nbsp;;</li>
-<li><a href="http://www.giroll.org/post/2012/03/30/Radio1-Ubuntu-TV-Ubuntu-for-Android" title="Le travail de Canonical sur les form factors">Ubuntu TV et Ubuntu pour Androïd</a> par Mathieu&nbsp;;</li>
-<li>Un <a href="http://www.giroll.org/post/2012/03/29/conferences-ateliers-benjamin-bayart-aquilenet" title="Réactions à la conférence de Benjamin Bayart">retour sur la conférence de Benjamin Bayart</a> du 24 mars au Centre d’Animation Saint-Michel (Bordeaux) par Yorick&nbsp;;</li>
-<li><a href="http://www.giroll.org/post/2012/03/31/Radio1-La-strat%C3%A9gie-globale-de-Microsoft-face-aux-logiciels-libres" title="Microsoft et les logiciels libres">Microsoft à L’Open World Forum</a> par bibi.</li>
-</ul>
-<p>Je ne gère pas encore bien le micro, ce qui explique les variations de volume, et il faut que je baisse le débit&nbsp;: c’est bien plus difficile que de parler à un public présent&nbsp;!</p>
-<p><audio controls>
-  <source src="../audio/radio1_microsoft.ogg" type="audio/ogg">
-Your browser does not support the audio element.
-</audio> </p>
-<p>Je vous encourage très fortement à écouter les autres émissions sur le site de Giroll, elles sont très intéressantes. Notamment, il est très instructif d’analyser les retours sur la conférence de Benjamin Bayart après avoir écouté ladite conférence, qui sera bientôt disponible chez <a href="http://www.aquilenet.fr/" title="Aquilenet | Fournisseur d'accès Internet libre en Aquitaine">Aquilenet</a>.</p>
-<p>Copie de l’article publié sur le <a href="http://www.giroll.org" title="Site du collectif Giroll">site de Giroll</a>&nbsp;:</p>
-<p>Le ton du discours de Microsoft sur les logiciels libres a bien changé. Si en 2001 Steve Ballmer, actuel CEO (PDG) de Microsoft, a affirmé que Linux était un cancer, en 2007 il a annoncé qu’il aimerait que toute innovation dans l'<em>open source</em> ait lieu sous Windows. Beaucoup y voient un réel infléchissement dans la position du géant de l’informatique sur le sujet. Pourtant, les deux positions ne sont pas contradictoires.</p>
-<hr />
-<p>Le géant mondial de l’informatique a une stratégie globale, cohérente, coordonnée pour atteindre son objectif&nbsp;: maintenir sa situation monopolistique dans un marché en mutation perpétuelle.</p>
-<p>Plutôt que de brosser à grands traits un portait abstrait de cette stratégie, nous allons développer dans plusieurs épisodes des actions concrètes de Microsoft, leurs impacts sur le monde du Libre, et leur place dans la stratégie globale de la firme.</p>
-<h1>Épisode 1&nbsp;: <del>La menace fantôme</del> Microsoft à L’Open World Forum</h1>
-<p>L'<em>Open World Forum</em> (OWF) est devenu une grand-messe de l'<em>open source</em> en France, voire en Europe. De nombreux responsables industriels et politiques s’intéressant aux logiciels libres, mais aussi à l'<em>open data</em>, à l'<em>open hardware</em> et aux cultures libres s’y retrouvent chaque année depuis 2008, à Paris.</p>
-<p>Lors de la dernière édition, on pouvait y croiser entre autres Éric Besson (Ministre de l’Industrie, de l’Énergie et de l’Économie numérique), Mark Shuttleworth (fondateur de l’entreprise Canonical qui soutient notamment la distribution GNU/Linux Ubuntu), Nigel Shadbolt (qui travaille avec Tim Berners-Lee sur le projet <em>open data</em> du gouvernement britannique) et Alfonso Castro, directeur de la stratégie interopérabilité chez… Microsoft France.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pZHIao169Bo" frameborder="0" allowfullscreen></iframe>
-
-<p>L’OWF a donc ouvert une tribune à Microsoft pour qu’il puisse évoquer une «&nbsp;<em>collaboration avec l’open source tous azimuts</em>&nbsp;». La participation de Microsoft à l’OWF va cependant beaucoup plus loin. En effet, il a obtenu le statut de <em>Gold Sponsor</em>, au même titre par exemple que l’INRIA ou SuSE. Cela signifie que Microsoft a contribué au financement de l’OWF, mais cela ne signifie pas que la firme de Redmond soit devenue l’amie des logiciels libres. Loin de là.</p>
-<p>Par un langage sybillin et l’emploi d’exemples tronqués qui flirtent avec le mensonge, Microsoft essaie de cacher la réalité de son action et de ses objectifs aux citoyens, aux pouvoirs publics, et même aux développeurs. Par le financement d’événements autour du Libre, il affaiblit les positions de ses détracteurs qui acceptent ses subsides.</p>
+      <p>Jeudi dernier (5 avril 2012), c’était la première <a href="http://www.giroll.org/post/2012/03/30/Radio1-jeudi-5-avril" title="Première Radio Giroll">Radio Giroll</a> diffusée sur <a href="http://www.oxyradio.net/" title="Oxyradio - Webradio libre - Respire et Écoute">Oxyradio</a>. Enfin première, pas vraiment : cela fait bien longtemps que le collectif diffuse des émissions de radio sur Oxy à l’occasion de ses <del>légendaires</del> sympathiques <em>install-parties</em>. C’est à l’occasion de celle de décembre (Oneiric ...</p>
+      <a class="btn" href="https://pagiraud.github.io/radio-giroll-microsoft-open-world-forum.html#radio-giroll-microsoft-open-world-forum">Continue reading</a>
   </div>
 </article>
 
@@ -585,9 +214,14 @@ Your browser does not support the audio element.
   </div>
 
     <footer>
-      <p>&copy; Pierre-Amiel Giraud </p>
+        <p>&copy; Pierre-Amiel Giraud </p>
 <p>Built using <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
   </main>
+
+
+
+
+
 <script type="application/ld+json">
 {
   "@context" : "http://schema.org",
@@ -597,5 +231,6 @@ Your browser does not support the audio element.
   "image": "",
   "description": ""
 }
-</script></body>
+</script>
+</body>
 </html>

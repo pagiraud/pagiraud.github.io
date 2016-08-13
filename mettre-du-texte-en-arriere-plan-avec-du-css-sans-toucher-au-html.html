@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/css/style.min.css">
-  <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/css/pygments.min.css">
-  <link rel="stylesheet" type="text/css" href="http://localhost:8000/theme/css/font-awesome.min.css">
-  <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Insolit Atom">
+  <link rel="stylesheet" type="text/css" href="https://pagiraud.github.io/theme/css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="https://pagiraud.github.io/theme/css/pygments.min.css">
+  <link rel="stylesheet" type="text/css" href="https://pagiraud.github.io/theme/css/font-awesome.min.css">
+  <link href="https://pagiraud.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Insolit Atom">
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,11 +17,11 @@
 <meta property="og:title" content="Mettre du texte en arrière-plan avec du CSS (sans toucher au HTML)"/>
 <meta property="og:description" content="Il m’est arrivé à plusieurs reprises de vouloir mettre du texte en arrière-plan sur une page web. Certains disent que le mieux est de mettre son texte sur une image matricielle (format PNG par exemple), et d’indiquer la fichier comme background-image dans le CSS. C’est une solution ..."/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="http://localhost:8000/mettre-du-texte-en-arriere-plan-avec-du-css-sans-toucher-au-html.html"/>
+<meta property="og:url" content="https://pagiraud.github.io/mettre-du-texte-en-arriere-plan-avec-du-css-sans-toucher-au-html.html"/>
 <meta property="og:type" content="article"/>
 <meta property="article:published_time" content="2012-08-04 08:00:00+02:00"/>
 <meta property="article:modified_time" content=""/>
-<meta property="article:author" content="http://localhost:8000/author/pierre-amiel-giraud.html">
+<meta property="article:author" content="https://pagiraud.github.io/author/pierre-amiel-giraud.html">
 <meta property="article:section" content="Outils et astuces"/>
 <meta property="article:tag" content="Développement web"/>
 <meta property="article:tag" content="CSS"/>
@@ -32,10 +32,10 @@
 <body>
   <aside>
     <div>
-      <a href="http://localhost:8000">
-        <img src="http://localhost:8000/theme/img/profile.png" alt="Insolit" title="Insolit">
+      <a href="https://pagiraud.github.io">
+        <img src="https://pagiraud.github.io/theme/img/profile.png" alt="Insolit" title="Insolit">
       </a>
-      <h1><a href="http://localhost:8000">Insolit</a></h1>
+      <h1><a href="https://pagiraud.github.io">Insolit</a></h1>
       <p>Informatique, logiciels libres et territoires</p>
       <nav>
         <ul class="list">
@@ -54,17 +54,17 @@
   </aside>
   <main>
     <nav>
-      <a href="http://localhost:8000">Home</a>
+      <a href="https://pagiraud.github.io">Home</a>
       <a href="/categories.html">Catégories</a>
       <a href="/archives.html">Archives</a>
       <a href="/tags.html">Étiquettes</a>
-      <a href="http://localhost:8000/feeds/all.atom.xml">Atom</a>
+      <a href="https://pagiraud.github.io/feeds/all.atom.xml">Atom</a>
     </nav>
 
 <article>
   <header>
     <h1 id="mettre-du-texte-en-arriere-plan-avec-du-css-sans-toucher-au-html">Mettre du texte en arrière-plan avec du CSS (sans toucher au HTML)</h1>
-    <p>Posted on sam. 04 août 2012 in <a href="http://localhost:8000/category/outils-et-astuces.html">Outils et astuces</a></p>
+    <p>Posted on sam. 04 août 2012 in <a href="https://pagiraud.github.io/category/outils-et-astuces.html">Outils et astuces</a></p>
   </header>
   <div>
     <p>Il m’est arrivé à plusieurs reprises de vouloir mettre du texte en arrière-plan sur une page web. Certains disent que le mieux est de mettre son texte sur une <a href="https://fr.wikipedia.org/wiki/Image_matricielle" title="Image matricielle">image matricielle</a> (format PNG par exemple), et d’indiquer la fichier comme <code>background-image</code> dans le CSS. C’est une solution assez simple mais qui s’avère peu flexible (Et si je n’ai qu’un éditeur de texte sous la main? Et si je veux définir les mots dynamiquement, en PHP par exemple, sans passer par une bibliothèque du type <a href="http://www.imagemagick.org" title="ImageMagick">ImageMagick</a>&#8239;?).</p>
@@ -73,39 +73,39 @@
 <h1>Un exemple simple de code pour se faire une idée</h1>
 <h2>Les codes sources HTML, CSS et SVG</h2>
 <h3>Un code HTML tout ce qu’il y a de plus bête</h3>
-<div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;</span>
+<div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;</span>
 <span class="cp">    &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-type&quot;</span> <span class="na">content=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;title&gt;</span>Essai CSS<span class="nt">&lt;/title&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href=</span><span class="s">&quot;test.css&quot;</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body</span> <span class="na">id=</span><span class="s">&quot;corps&quot;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;div&gt;&lt;p&gt;</span>Ainsi va la vie<span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;Content-type&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Essai CSS<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;test.css&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;corps&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ainsi va la vie<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 
 
 <h3>Le CSS qui s’y rapporte</h3>
-<div class="highlight"><pre><span class="nt">div</span> <span class="p">{</span>
-<span class="k">background</span><span class="o">:</span> <span class="sx">url(&#39;dessin-mini.svg&#39;)</span> <span class="nb">red</span><span class="p">;</span>
-<span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="nb">black</span> <span class="k">solid</span><span class="p">;</span>
-<span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><span class="nt">div</span> <span class="p">{</span>
+<span class="nb">background</span><span class="o">:</span> <span class="sx">url(&#39;dessin-mini.svg&#39;)</span> <span class="nb">red</span><span class="p">;</span>
+<span class="nb">border</span><span class="o">:</span> <span class="m">1px</span> <span class="nb">black</span> <span class="nb">solid</span><span class="p">;</span>
+<span class="nb">text-align</span><span class="o">:</span> <span class="nb">center</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">p</span> <span class="p">{</span>
-<span class="k">margin</span><span class="o">:</span><span class="m">20px</span> <span class="k">auto</span> <span class="m">20px</span> <span class="k">auto</span><span class="p">;</span>
-<span class="k">background</span><span class="o">:</span> <span class="nb">silver</span><span class="p">;</span>
-<span class="k">padding</span><span class="o">:</span> <span class="m">30px</span><span class="p">;</span>
-<span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
-<span class="k">width</span><span class="o">:</span> <span class="m">50%</span><span class="p">;</span>
+<span class="nb">margin</span><span class="o">:</span><span class="m">20px</span> <span class="nb">auto</span> <span class="m">20px</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="nb">background</span><span class="o">:</span> <span class="nb">silver</span><span class="p">;</span>
+<span class="nb">padding</span><span class="o">:</span> <span class="m">30px</span><span class="p">;</span>
+<span class="nb">text-align</span><span class="o">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="nb">width</span><span class="o">:</span> <span class="m">50%</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 
 
 <h3>Et enfin le SVG qui va bien</h3>
-<div class="highlight"><pre><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 <span class="nt">&lt;svg</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="na">version=</span><span class="s">&quot;1.1&quot;</span> <span class="na">width=</span><span class="s">&quot;180&quot;</span> <span class="na">height=</span><span class="s">&quot;32&quot;</span><span class="nt">&gt;</span>
 <span class="nt">&lt;text</span> <span class="na">y=</span><span class="s">&quot;15&quot;</span><span class="nt">&gt;</span>Attention Danger!<span class="nt">&lt;/text&gt;</span>
 <span class="nt">&lt;/svg&gt;</span>
@@ -123,7 +123,7 @@
 <h1>Pour aller plus loin…</h1>
 <h2>Changer la police, la couleur ou la taille du texte</h2>
 <p>Le SVG minimal proposé plus haut ne contenait aucune information sur l’apparence à donner au texte. C’est donc celle par défaut qui est appliquée. Mais, si vous voulez le personnaliser, ce n’est pas plus compliqué que d’éditer du CSS&#8239;!</p>
-<div class="highlight"><pre><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 <span class="nt">&lt;svg</span>
     <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/2000/svg&quot;</span>
     <span class="na">version=</span><span class="s">&quot;1.1&quot;</span> <span class="na">width=</span><span class="s">&quot;500&quot;</span> <span class="na">height=</span><span class="s">&quot;32&quot;</span><span class="nt">&gt;</span>
@@ -150,7 +150,7 @@
 <p>Il est courant de vouloir que le texte d’arrière-plan soit incliné de 30° ou 45°. Il existe deux méthodes pour obtenir ce résultat.</p>
 <h3>Indiquer la rotation dans le fichier SVG lui-même</h3>
 <p>C’est la solution qui paraît la plus évidente, mais nous allons voir que ce n’est pas le cas. Elle consiste à appliquer une transformation sur la balise <code>&lt;text&gt;</code>&#8239;: <code>transform = "rotate(-45 90 16)</code> où -45 correspond à l’inclinaison à donner au texte en degrés (le signe négatif indique qu’il faut tourner dans le sens inverse des aiguilles d’une montre, ce qui n’est <a href="https://fr.wikipedia.org/wiki/Sens_direct" title="Les sens de rotation">pas logique</a>, mais je ne fais pas les normes). Les deux nombres qui suivent indiquent les coordonnées du centre de rotation. Ici, je l’ai placé au milieu du SVG. Le code du fichier est donc le suivant&#8239;:</p>
-<div class="highlight"><pre><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 <span class="nt">&lt;svg</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/2000/svg&quot;</span> <span class="na">version=</span><span class="s">&quot;1.1&quot;</span>  <span class="na">width=</span><span class="s">&quot;180&quot;</span> <span class="na">height=</span><span class="s">&quot;32&quot;</span><span class="nt">&gt;</span>
 <span class="nt">&lt;text</span> <span class="na">y=</span><span class="s">&quot;15&quot;</span> <span class="na">transform =</span> <span class="s">&quot;rotate(-45 90 16)&quot;</span><span class="nt">&gt;</span>Attention Danger!<span class="nt">&lt;/text&gt;</span>
 <span class="nt">&lt;/svg&gt;</span>
@@ -173,10 +173,10 @@
   </div>
   <div class="tag-cloud">
     <p>
-      <a href="http://localhost:8000/tag/developpement-web.html">Développement web</a>
-      <a href="http://localhost:8000/tag/css.html">CSS</a>
-      <a href="http://localhost:8000/tag/svg.html">SVG</a>
-      <a href="http://localhost:8000/tag/le-fond-et-la-forme.html">le fond et la forme</a>
+      <a href="https://pagiraud.github.io/tag/developpement-web.html">Développement web</a>
+      <a href="https://pagiraud.github.io/tag/css.html">CSS</a>
+      <a href="https://pagiraud.github.io/tag/svg.html">SVG</a>
+      <a href="https://pagiraud.github.io/tag/le-fond-et-la-forme.html">le fond et la forme</a>
     </p>
   </div>
 </article>
@@ -196,10 +196,10 @@
   "author": {
     "@type": "Person",
     "name": "Pierre-Amiel Giraud",
-    "url": "http://localhost:8000/author/pierre-amiel-giraud.html"
+    "url": "https://pagiraud.github.io/author/pierre-amiel-giraud.html"
   },
   "image": "{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/profile.png",
-  "url": "http://localhost:8000/mettre-du-texte-en-arriere-plan-avec-du-css-sans-toucher-au-html.html",
+  "url": "https://pagiraud.github.io/mettre-du-texte-en-arriere-plan-avec-du-css-sans-toucher-au-html.html",
   "description": "Il m’est arrivé à plusieurs reprises de vouloir mettre du texte en arrière-plan sur une page web. Certains disent que le mieux est de mettre son texte sur une image matricielle (format PNG par exemple), et d’indiquer la fichier comme background-image dans le CSS. C’est une solution ..."
 }
 </script></body>
